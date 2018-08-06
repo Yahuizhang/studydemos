@@ -1,6 +1,10 @@
 import _ from "lodash";
+import path from "path";
 let config = {
-        "viewDir": ""
+    // 模板
+        "viewDir": path.join(__dirname,"..","views"),
+        // 静态资源
+        "staticDir":path.join(__dirname,"..","")
     }
     //todo 增加了非常多无用的代码 导致当前的逻辑过长 导致代码量偏大  对代码进行清洗
 const init = () => {
